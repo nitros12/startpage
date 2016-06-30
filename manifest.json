@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "startpage",
+    "version": "1.5.0",
+    "description": "Overrides newtab with custom startpage.",
+    "author": "yuki",
+
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
