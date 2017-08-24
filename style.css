@@ -1,0 +1,130 @@
+@-webkit-keyframes animate-panel {
+    0% { border-color:transparent; height:0px; top: 100%;}
+
+}
+
+input{
+	background-color: #555 !important;
+}
+
+body{ /*sets the body to hide any element overflows, use the pixelmix font and to have the font size set to 12px*/
+    overflow: hidden;
+	font-family: "fantasque sans mono";
+	font-size: 12px;
+	-webkit-user-select: none;
+}
+
+a { /*sets all anchor tags to have no text decoration (such as purple visited links, or underlining links that you are hovering),
+	and to set the distance between lines of text to 25 pixels*/
+    text-decoration:none;
+    line-height:25px;
+}
+
+a:focus { /*sets the anchor tags to change their text color to a dark cyan when clicked, and to transition to that color in 0.2 seconds
+		the !important makes it so the style overrides all others*/
+	color: #00AAAA!important;
+	-webkit-transition: all .05s ease;
+}
+
+a:hover { /*sets the anchor tags to change their text color to #077 when moused over, in a transition time of 0.2 seconds*/
+	color: #077!important;
+	-webkit-transition: all .2s ease;
+}
+
+#container { /* sets an element with the container ID to take up the entire page, and to display in a table layout*/
+    height:100vh;
+    width:100vw;
+    display:table;
+}
+
+#cell { /*sets an element with the cell ID to display in a table-cell, aligns to the center, and align its text to the center*/
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+.sqr { /*sets all elements with the sqr class to display inline, be 150 pixels wide and tall and to have a margin of 5px on top and bottom, and 7 on the left and right, and hides overflows*/
+    display:inline-block;
+	 background-color: #555;
+    width:150px;
+    height:150px;
+    margin:5px 7px;
+    overflow:hidden;
+    -webkit-transition:all .3s ease; /* these are just transitions to make the element appear to expand open when the page loads*/
+    -o-transition:all .3s ease;
+    transition:all .3s ease;
+    vertical-align:middle;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); /*adds a shadow to the element*/
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	animation: animate-panel .2s ease;
+}
+
+.sqr:hover {
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*when the element is moused over, the shadow will enlarge, and the background color will change*/
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: rgba(255,255,255,0.5)!important;
+
+}
+
+.content {
+    margin:0 10px 0;
+    line-height:25px;
+	margin-top:5px;
+}
+
+#gotosub {
+	color: #111!important;
+  padding-left: 16px;
+  margin-left: -8px;
+}
+
+.sqr:hover > span {
+  color: #555;
+}
+
+span {
+    width:inherit;
+    height:inherit;
+    line-height:150px;
+    text-transform:uppercase;
+	 font-family:'fantasque sans mono';
+	 font-size: 30px;
+   color: #CDCDCD;
+   -webkit-transition:all .3s ease; /* these are just transitions to make the element appear to expand open when the page loads*/
+   -o-transition:all .3s ease;
+   transition:all .3s ease;
+}
+
+
+#searchinput {
+    width:130px;
+    height:37px;
+    border:none;
+}
+
+placeholder {
+	color:#111;
+}
+
+#bgimg {
+    z-index:-10;
+    position:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#popup {
+    position: absolute;
+    z-index: 100;
+    bottom: -200px;
+    right: 15px;
+    padding: 25px;
+    -webkit-transition:all .4s cubic-bezier(0.5, -0.25, 0.265, 1.5);
+    -webkit-transition:all .4s cubic-bezier(0.5, -0.25, 0.265, 1.5);
+    -o-transition:all .4s cubic-bezier(0.5, -0.25, 0.265, 1.5);
+    transition:all .4s cubic-bezier(0.5, -0.25, 0.265, 1.5);
+    text-align:left;
+}

@@ -1,20 +1,65 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>startpage</title>
-        <script src="js/dom.js"></script>
-        <script src="js/square.js"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/loadconfig.js"></script>
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <div id="bgimg"></div>
-        <div id="container">
-            <div id="cell"></div>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>startpage</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <div id="bgimg"></div>
+    <div id="container">
+        <div id="cell">
+            <div class="sqr">
+                <span>chans</span>
+                <div class="content">
+                    <a href="https://lainchan.jp/tech/">/tech.jp/</a><br>
+                    <a href="https://lainchan.org/tech/">/tech.org/</a><br>
+                    <a href="https://lainchan.jp/λ/">/λ.jp/</a><br>
+                    <a href="https://lainchan.org/λ/">/λ.org/</a><br>
+                    <a href="https://boards.4chan.org/a/">/a/</a><br>
+                    <a href="https://boards.4chan.org/g/">/g/</a><br>
+					<a href="https://boards.4chan.org/sci/">/sci/</a><br>
+                    <a href="https://boards.4chan.org/vg/">/vg/</a><br>
+                </div>
+            </div>
+            <div class="sqr">
+                <span>Web</span>
+                <div class="content">
+                    <a href="https://youtube.com">YouTube</a><br>
+                    <a href="https://gmail.com">Mail</a><br>
+                    <a href="https://github.com/nitros12">Github</a><br>
+                    <a href="https://news.ycombinator.com">Hacker News</a><br>
+                    <a href="https://mail.cock.li">cock.li</a><br>
+                </div>
+            </div>
+            <div class="sqr" id="search_sqr">
+                <span>Reddit</span>
+                <div class="content">
+                    <a href="https://reddit.com">Reddit</a><br>
+                    <a href="https://reddit.com/r/katawashoujo">/r/KS</a><br>
+                    <a href="https://reddit.com/r/tf2">/r/TF2</a><br>
+                    <a href="https://reddit.com/r/pcmasterrace">/r/PCMR</a><br>
+                    <a href="https://reddit.com/r/mechanicalkeyboards">/r/MK</a><br>
+                    <a href="https://reddit.com/r/multicopter">/r/quad</a><br>
+                    <a href="https://reddit.com/r/spacex">/r/spacex</a><br>
+                    <a href="https://reddit.com/r/overwatch">/r/OW</a><br>
+                    <a href="https://reddit.com/r/programming">/r/prog</a><br>
+                    <a href="https://reddit.com/r/programmerhumor">/r/progh</a><br>
+                    <div class="content"><br>
+                        <input id="gotosub" type="text" placeholder="Goto Sub" autocomplete="off"></div>
+                </div>
+            </div>
         </div>
-        <div id="popup"></div>
-    </body>
+    </div>
+
+</body>
+
 </html>
